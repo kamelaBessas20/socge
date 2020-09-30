@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="socge.js"></script>
+    <title>Connexion</title>
+</head>
+<body>
+    <div class="sing-in">
+        <h1 class="title">Connexion - Espace client</h1>
+        <input id="user-code" type="text" class="text-input" required minlength="8" maxlength="8" placeholder="Saisissez votre code client"/>
+      
+        <div class="switch">
+            <label class="switch-label">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="save-me">Se souvenir de moi</span>
+            <span class="show-infos" role="button">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                    <circle cx="8" cy="4.5" r="1"/>
+                </svg>
+            </span>
+       </div>
+       <div class="infos">
+        <p>Se souvenir de moi</p>
+        <p>En cochant cette case, votre code client sera mémorisé sur cet appareil.</p>
+        <p>De cette manière vous n'aurez plus à le saisir lors de vos prochaines connexions.</p>
+        <p>Ceci est déconseillé si votre ordinateur est utilisé par d'autres personnes.</p>
+        <button id="close">J'ai compris</button>
+    </div>
+       <button class="btn-validate" type="button">Valider</button>
+    </div>
+</body>
+</html>
